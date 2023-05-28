@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Lobster';
+    src: url("HTML/Lobster-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Viga';
+    src: url("HTML/Viga-Regular.ttf");
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/sea4.jpg");
+    background-size: cover;
+}
+/*********************************** TITLE **************************************/
+
+.brand {
+    color: rgb(240, 238, 98);
+    text-decoration: none;
+    text-align: center;
+    border: 3px solid white;
+    padding: 15px;
+    border-radius: 20px;
+    font-family: 'Lobster';
+    font-size: 45px;
+
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+/*********************************** Nav Bar section **************************************/
+
+
+.navBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    margin-top: 20px;
+}
+
+.navbar .navBar .nav-link {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "Viga";
+    margin: 10px;
+    padding: 7px;
+    letter-spacing: 2px;
+
+}
+
+.navbar .navBar .nav-link:hover {
+    color: black;
+    font-weight: bold;
+    letter-spacing: 6px;
+
+
+}
+
+.navbar span {
+    color: white;
+    font-size: 25px;
+}
+
+/*********************************** Sign in Section **************************************/
+
+
+.signIn {
+    box-shadow: 0 0 5px white;
+    padding: 35px 35px 35px 15px;
+}
+
+.animated_div {
+    height: 50px;
+    width: 100%;
+    position: relative;
+}
+
+.inputbx {
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    font-size: 22px;
+    background: transparent;
+    color: white;
+}
+
+.animate_lbl {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    color: white;
+    margin-left: 10px;
+    font-size: 22px;
+    pointer-events: none;
+    transition: all 0.5 ease;
+}
+
+.inputbx:focus~.animate_lbl,
+.inputbx:valid~.animate_lbl {
+    transform: translateY(-20px);
+    color: rgb(226, 233, 161);
+    font-weight: bold;
+}
+
+.underline {
+    position: absolute;
+    bottom: 0px;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+}
+
+.underline:before {
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 100%;
+    background-color: rgb(237, 74, 55);
+    transition: transform 0.5s ease;
+    transform: scaleX(0);
+}
+
+.inputbx:focus~.underline:before,
+.inputbx:valid~.underline:before {
+
+    transform: scaleX(1);
+}
+
+.signinBtn {
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: blue;
+    border: 1px solid blue;
+    padding: 7px;
+    font-size: 22px;
+    color: white;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 3px;
+    margin-left: 10px;
+}
+
+#btn {
+    display: block;
+    margin: auto;
+}
+
+.signinBtn:hover {
+    background-color: rgb(206, 74, 60);
+    border: none;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0px;
+}
